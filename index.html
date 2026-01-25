@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>One pulse</title>
+    <title>One pulse AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -35,7 +35,7 @@
             <div class="p-6 border-b border-gray-800">
                 <div class="flex items-center space-x-2">
                     <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg"></div>
-                    <span class="text-xl font-bold">ArtGen AI</span>
+                    <span class="text-xl font-bold">One pulse AI</span>
                 </div>
             </div>
             
@@ -194,7 +194,7 @@
                         <div class="bg-gray-900 rounded-xl p-5 border border-gray-800">
                             <label class="block text-sm font-medium mb-3">AI Model</label>
                             <select id="modelSelect" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-purple-500 transition">
-                                <option>ArtGen Pro v5</option>
+                                <option>One pulse AI Pro v5</option>
                                 <option>Realistic Vision</option>
                                 <option>Anime Diffusion</option>
                                 <option>Fantasy Art</option>
@@ -341,7 +341,7 @@
             gallery: [], // {id, dataUrl, w, h, prompt, tags:[], fav:bool}
             favorites: new Set(),
             selectedAspect: '1:1',
-            model: 'ArtGen Pro v5',
+            model: 'One pulse AI Pro v5',
             quality: 'Standard (Fast)',
             batchSize: 1,
             style: null,
@@ -350,7 +350,7 @@
         };
 
         // Persist / load
-        const STORAGE_KEY = 'artgen_state_v1';
+        const STORAGE_KEY = 'One pulse AI _state_v1';
         function saveState() {
             const st = {
                 credits: state.credits,
@@ -1078,7 +1078,7 @@
             // small watermark
             ctx.font = `${Math.max(12, Math.floor(width/80))}px Inter, sans-serif`;
             ctx.fillStyle = 'rgba(255,255,255,0.6)';
-            ctx.fillText(`ArtGen Demo • ${style || 'default'}`, width - 160, height - 18);
+            ctx.fillText(`One pulse AI  Demo • ${style || 'default'}`, width - 160, height - 18);
 
             return canvas.toDataURL('image/png');
         }
