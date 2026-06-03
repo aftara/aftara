@@ -1,0 +1,16 @@
+{
+  "name": "onepulse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OnePulse – AI-Powered Accessibility and Emergency Assistance Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
+    "build": "npm run build --workspace client",
+    "start": "npm run start --workspace server",
+    "lint": "npm run lint --workspace client && npm run lint --workspace server"
+  },
+  "workspaces": ["client", "server"],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
